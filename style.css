@@ -51,3 +51,15 @@ marquee{
     font-weight: bold;
     padding: 5px 0px;
 }
+
+.nit{
+    text-align: center;
+    background-color: rgb(222, 236, 238);
+}
+
+.nit h1{
+    margin: 30vh 0;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 5px;
+}
