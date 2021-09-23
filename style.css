@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 
 body{
-  min-height: 100vh;
+  height: 100vh;
 }
 
 *{
@@ -42,7 +42,7 @@ nav ul li{
   margin: 0 30px;
 }
 nav .logo{
-  font-size: 35px;
+  font-size: 40px;
   color: white;
   margin-left: -50px;
   font-family: 'Poppins', sans-serif;
@@ -65,6 +65,36 @@ nav .menu-btn i{
   display: none;
 }
 
+.nit{  
+  margin-top: 35vh;
+  text-align: center;
+  background-color: rgb(222, 236, 238);
+}
+
+.nit h1{
+  left: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+marquee{
+  font-size: 25px;
+}
+footer{
+  position: sticky;
+  top: 100%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0909;
+  color: white;
+  padding: 15px;
+  font-size: 25px;
+}
+
+nav .logo span{
+  color: red;
+}
 @media (max-width:1150px){
 
   #click:checked ~ .menu-btn i::before{
@@ -80,7 +110,10 @@ nav .menu-btn i{
     background-color: black;
     text-align: center;
     transition: all 0.3s ease;
-    
+  }
+
+  nav ul li a{
+    font-size:15px;
   }
   #click{
     display: none;
@@ -99,34 +132,20 @@ nav .menu-btn i{
   nav .logo{
     font-size: 25px;
   }
-}
-.nit{  
-  margin-top: 35vh;
-  text-align: center;
-  background-color: rgb(222, 236, 238);
-}
+  .nit h1{
+    font-size: 23px;
+  }
 
-.nit h1{
-  left: 10px;
-  font-size: 35px;
-  font-weight: bold;
-  padding: 5px;
-}
+  marquee{
+    font-size: 14px;
+  }
 
-marquee{
-  font-size: 20px;
-}
-footer{
-  position: sticky;
-  top: 100%;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  background-color: #0a0909;
-  color: white;
-  padding: 15px;
-  font-size: 20px;
-}
+  footer{
+    font-size: 15px;
+  }
+  
+  nav .menu-btn i{
+    font-size: 18px;
+  }
 
-nav .logo span{
-  color: red;
 }
