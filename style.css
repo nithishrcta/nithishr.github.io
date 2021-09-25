@@ -146,7 +146,7 @@ footer{
   font-size: 18px;
 }
 
-@media (max-width:1150px){
+@media (max-width:1150px) and (min-width:795px){
 
   #click:checked ~ .menu-btn i::before{
     content: "\f00d";
