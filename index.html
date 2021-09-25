@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav>
+  <!-- <nav>
     <div class="logo"><span>R</span> Nithish</div>
     <input type="checkbox" id="click">
     <label for="click" class="menu-btn">
@@ -25,8 +25,45 @@
       <li><a href="#">Projects</a></li>
       <li><a href="#">Feedback</a></li>
     </ul>
+  </nav> -->
+  <nav id="navbar" style="display: flex;">
+    <div class="logo"><a href="alchemial.com">
+        <h3>
+          <span>R</span> Nithish
+        </h3>
+      </a>
+    </div>
+
+
+    <ul style="margin-bottom: 0;">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Project</a></li>
+      <li><a href="#">Feedback</a></li>
+    </ul>
+
+    <div class="burger" onclick="toggleMenu();">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
   </nav>
 
+
+  <div class="toggle" onclick="toggleMenu();">
+    <ul>
+      <li><a href="#">Home</a>
+      </li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Project</a></li>
+      <li><a href="#">Feedback</a></li>
+    </ul>
+
+  </div>
+
+
+  </div>
   <div class="main">
     <div class="image">
       <img class="img" data-aos="fade-right" data-aos-duration="1500" src="sample.png" alt="">
@@ -48,6 +85,34 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script>
+  {
+    const nav = document.querySelector("#navbar");
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll", () => {
+      if (lastScrollY < window.scrollY) {
+        nav.classList.add("nav--hidden");
+
+      } else {
+        nav.classList.remove("nav--hidden");
+      }
+
+      lastScrollY = window.scrollY;
+    });
+  }
+
+</script>
+
+<script>
+  function toggleMenu() {
+    var menuToggle = document.querySelector('.burger');
+    var menu = document.querySelector('.toggle');
+    menuToggle.classList.toggle('active');
+    menu.classList.toggle('active');
+
+  }
 </script>
 
 </html>
