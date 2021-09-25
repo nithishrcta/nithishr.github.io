@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <title>R Nithish</title>
 </head>
+
 <body>
   <nav>
     <div class="logo"><span>R</span> Nithish</div>
-    <input type="checkbox" id="click"> 
+    <input type="checkbox" id="click">
     <label for="click" class="menu-btn">
       <i class="fas fa-bars"></i>
     </label>
@@ -22,13 +26,29 @@
       <li><a href="#">Feedback</a></li>
     </ul>
   </nav>
-  <div class="nit">
-    <h1>Stay Tuned &#128512;</h1>
+
+  <div class="main">
+    <div class="image">
+      <img class="img" data-aos="fade-right" data-aos-duration="1500" src="sample.png" alt="">
+    </div>
+    <div class="text" data-aos="fade-left" data-aos-duration="1500">
+      <p class="first">Hi Iam</p>
+      <P class="second">Nithish R</P>
+      <p class="third">Currently Pursuing BTech in Computer Science 2nd Year,<br>Reva University,Bangalore<br>I love
+        to
+        explore things with Love of Technology </p>
+      <button class="button" data-aos="flip-up" data-aos-duration="1500">Download Resume</button>
+    </div>
   </div>
-  <marquee behavior="" direction="">For More Details contact : nithishr81@gmail.com</marquee>
-  
-<footer>
-  <i class="far fa-envelope"></i> nithishr81@gmail.com
-</footer>
+
+
+  <footer>
+    <i class="far fa-envelope"></i> nithishr81@gmail.com
+  </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </html>
