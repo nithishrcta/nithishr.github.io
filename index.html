@@ -5,29 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <title>Nithish R</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <title>R Nithish</title>
 </head>
 
 <body>
-  <!-- <nav>
-    <div class="logo"><span>R</span> Nithish</div>
-    <input type="checkbox" id="click">
-    <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Feedback</a></li>
-    </ul>
-  </nav> -->
-  <nav id="navbar" style="display: flex;">
-    <div class="logo"><a href="alchemial.com">
+
+  <!-- *****Navbar***** -->
+
+  <nav id="navbar">
+    <div class="logo"><a href="">
         <h3>
           <span>R</span> Nithish
         </h3>
@@ -35,11 +24,11 @@
     </div>
 
 
-    <ul style="margin-bottom: 0;">
+    <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Project</a></li>
-      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
 
     <div class="burger" onclick="toggleMenu();">
@@ -53,66 +42,101 @@
 
   <div class="toggle" onclick="toggleMenu();">
     <ul>
-      <li><a href="#">Home</a>
-      </li>
+      <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Project</a></li>
-      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
 
   </div>
 
+  <!-- *****Navbar***** -->
 
-  </div>
-  <div class="main">
-    <div class="image">
-      <img class="img" data-aos="fade-right" data-aos-duration="1500" src="sample.png" alt="">
+
+
+  <!-- *****COntent about***** -->
+
+
+  <section class="about">
+
+
+    <div class="about-image">
+      <img src="sample.png" alt="">
     </div>
-    <div class="text" data-aos="fade-left" data-aos-duration="1500">
-      <p class="first">Hi Iam</p>
-      <P class="second">Nithish R</P>
-      <p class="third">Currently Pursuing BTech in Computer Science 2nd Year,<br>Reva University,Bangalore<br>I love
-        to
-        explore things with Love of Technology </p>
-      <button class="button" data-aos="flip-up" data-aos-duration="1500">Download Resume</button>
+
+
+
+
+    <div class=" about-info">
+      <div class="info">
+        <h1>Hi I'm <span>Nithish</span>
+        </h1>
+        <!-- <h3>Founder of UXDesigner</h3> -->
+        <h6> Currently Pursuing BTech in Computer Science,<br>
+          Reva University,<br>
+          Bangalore, India</h6>
+        <p> +91 9019968634</p>
+      </div>
+
+
+      <div class="about_social">
+        <a href="https://www.instagram.com/nithish__r/" class="social_icon">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="#" class="social_icon">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nithish-r-432339202/" class="social_icon">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
+
     </div>
+
+
+
+
+  </section>
+  <!-- *****COntent about***** -->
+
+
+  <div class="footer">
+    <i class="fa fa-envelope"></i>
+    <p>nithishr81@gmail.com</p>
   </div>
 
-  <footer>
-    <i class="far fa-envelope"></i> nithishr81@gmail.com
-  </footer>
+
+  <script>
+    {
+      const nav = document.querySelector("#navbar");
+      let lastScrollY = window.scrollY;
+
+      window.addEventListener("scroll", () => {
+        if (lastScrollY < window.scrollY) {
+          nav.classList.add("nav--hidden");
+
+        } else {
+          nav.classList.remove("nav--hidden");
+        }
+
+        lastScrollY = window.scrollY;
+      });
+    }
+
+  </script>
+
+  <script>
+    function toggleMenu() {
+      var menuToggle = document.querySelector('.burger');
+      var menu = document.querySelector('.toggle');
+      menuToggle.classList.toggle('active');
+      menu.classList.toggle('active');
+
+    }
+  </script>
+
+
+
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script>
-  {
-    const nav = document.querySelector("#navbar");
-    let lastScrollY = window.scrollY;
-
-    window.addEventListener("scroll", () => {
-      if (lastScrollY < window.scrollY) {
-        nav.classList.add("nav--hidden");
-
-      } else {
-        nav.classList.remove("nav--hidden");
-      }
-
-      lastScrollY = window.scrollY;
-    });
-  }
-
-</script>
-
-<script>
-  function toggleMenu() {
-    var menuToggle = document.querySelector('.burger');
-    var menu = document.querySelector('.toggle');
-    menuToggle.classList.toggle('active');
-    menu.classList.toggle('active');
-
-  }
-</script>
 
 </html>
