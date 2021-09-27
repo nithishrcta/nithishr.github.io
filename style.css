@@ -247,14 +247,15 @@ nav{
   }
   
   .about-image{
-  padding: 0%;
-  margin: 0% 0% 6% 3%;
+  padding: 8%;
+  padding-bottom: 0;
+  margin: 8% 0% 6% 3%;
   }
 
   img{
    
     width: 100%;
-    height: 100%;
+    height: 90%;
 
     
   }
@@ -364,14 +365,18 @@ margin-top: 20px;
       text-align: center;
     }
     .about-image {
-      width: 80%;
-      margin: 10px auto;
+      margin: 0 auto;
+      margin-top: 10px;
     }
     .about_social {
       justify-content: center;
       margin-top: 10px;
     }
-  
+   
+      img{
+        width: 100%;
+        ;
+      }
     .toggle ul li a{
       font-size: 15px;
     }
