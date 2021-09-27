@@ -183,7 +183,7 @@ nav{
 /* *********About Section******** */
 
 .about{
-    height: 80vh;
+    height:90vh;
     padding-top: 60px;
     display: flex;
     justify-content: space-evenly;
@@ -209,7 +209,8 @@ nav{
   
   .about_social a{
     text-decoration: none;
-    margin: 10px 10px;
+    margin: 0px 10px;
+    margin-bottom: 10px;
   }
   .about_social a i{
     font-size: 1.2rem;
@@ -257,6 +258,69 @@ nav{
 
     
   }
+  .button{
+    color:white;
+    background-color: red;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px ;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+  }
+
+
+  /* -------- Education---------------- */
+  .education{
+      padding-top: 20px;
+      background-color: #000000;
+  }
+  .edu-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .edu-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2% 0;
+ 
+  }
+  .logo1{
+    flex-basis: 35%;
+    text-align: center;
+  }
+  .logo1 img{
+    width:30%;
+   
+  }
+  .info1 h1,p {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 2% 0;
+}
+.info1{
+  margin: auto 10px;
+  flex-basis: 35%;  
+}
+
+.head{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight:bold ;
+  font-size: 1.8rem;
+  margin-bottom:10px ;
+}
+hr{
+width:60%;
+margin: 0 auto;
+margin-top: 20px;
+}
+
 
   /* Responsive */
   
@@ -289,7 +353,7 @@ nav{
   @media screen and (max-width: 500px){
   
     .about {
-      height: 90vh;
+      height: 95vh;
       flex-direction: column;
       justify-content: center;
       padding-top: 0px;
@@ -314,26 +378,96 @@ nav{
 
 
     .info h1{
-      font-size: 1.5rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
       font-weight: bold;
     }
     .info h3{
       font-size: 1rem;
     }
     .info h6{
-      font-size: 0.6rem;
-      font-weight: bold;
-    }
-    .info p{
+      font-family: 'Poppins', sans-serif;
       font-size: 0.7rem;
       font-weight: bold;
     }
-  
-  
-  
+    .info p{
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    .button{
+      font-size: 0.8rem;
+      margin: 10px 0;
+    }
+    .about_social{
+      margin-top: 0;
+     
+    }
+    .about_social a i{
+     font-size: 1rem;
+    }
+    .head{
+      font-size: 1rem;
+    }
+
+    .edu-div{
+      display: flex;
+      flex-direction: crow;
+      margin-bottom: 15%;
+    }
+    .edu-1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 2% 0;
+   
+    }
+    .logo1{
+      flex-basis: 35%;
+      text-align: center;
+    }
+    .logo1 img{
+      width:20%;
+     
+    }
+    .info1 h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 2% 0;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
   }
+  .info1 p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 2% 0;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .info1{
+    margin: auto 10px;
+    flex-basis: 35%;  
+  }
+ 
+  hr{
+    width:70%;
+    margin: 10px auto;
+  } 
+
+  .footer p{
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+  .footer i{
+    font-size: 0.9rem;
+  }
+}
+
   
-  
+
   
   /* *********About Section******** */
   
@@ -353,9 +487,9 @@ nav{
   align-items: center;
   height: 50px;
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .footer i{
-  padding: 0px 15px;
+  padding: 0px 5px;
 }
