@@ -184,7 +184,7 @@ nav{
 /* *********About Section******** */
 
 .about{
-    height:90vh;
+    height:100vh;
     padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
@@ -355,7 +355,7 @@ margin-top: 20px;
   @media screen and (max-width: 500px){
   
     .about {
-      height: 90vh;
+      height: 100vh;
       flex-direction: column;
       justify-content: center;
       padding-top: 0px;
@@ -419,7 +419,7 @@ margin-top: 20px;
     }
 
     .education{
-      height: 85vh;
+      height: 89vh;
 
     }
     .edu-div{
